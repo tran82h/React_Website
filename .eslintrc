@@ -1,0 +1,17 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+        "jsx": true
+    },
+  "plugins": [
+      "react-pug",
+      "transform-react-pug",
+      "transform-react-jsx"
+  ],
+  "extends": [
+      "plugin:react-pug/all"
+      ]
+  }
+}

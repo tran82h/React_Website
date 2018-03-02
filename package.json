@@ -2,15 +2,33 @@
   "name": "website",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://tran82h.github.io/React_Website/",
   "dependencies": {
+    "gh-pages": "^1.1.0",
+    "jscs": "^3.0.7",
+    "node-sass-chokidar": "0.0.3",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-scripts": "1.1.1"
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "^1.1.1",
+    "wow.js": "^1.2.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-plugin-transform-react-pug": "^4.0.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "^4.18.1",
+    "eslint-plugin-react": "^7.7.0",
+    "eslint-plugin-react-pug": "^0.2.0"
   }
 }
